@@ -29,7 +29,7 @@ sudo dnf install gnome-tweaks
 
 These fonts are usually included with most Linux distributions. If not, you can install them using the package manager of your distribution.
 
-Other than this, I use the 0xProtoNerdFonts a lot, I've included them [](/fonts/) directory. I am a fan of the MonoLisa font too. It's paid but you can easily find it on the internet. Else, text me, I'll send it to you.
+Other than this, I use the 0xProtoNerdFonts a lot, I've included them [fonts](/fonts/) directory. I am a fan of the MonoLisa font too. It's paid but you can easily find it on the internet. Else, text me, I'll send it to you.
 
 Pro Tip: If any font is unavailable, you can download the ttf file from the internet and place it in the ~/.fonts directory (/home/yourusername/.fonts). Then run the following command to update the font cache.
 
@@ -48,7 +48,8 @@ https://extensions.gnome.org/extension/5156/desktop-clock/
 
 2. Open the extension settings and click on 'Add Widget'.
 
-![](/res/addwidget.mp4)
+[addwidget.webm](https://github.com/realKarthikNair/replicating-my-linux-desktop-setup/assets/78267371/42783d79-2648-4d3a-a2aa-87b70bf8bd54)
+
 
 
 3. Add a Digital Clock widget and follow these
@@ -57,16 +58,18 @@ https://extensions.gnome.org/extension/5156/desktop-clock/
 
 Create elements as shown 
 
-![](/res/firstwidget.mp4)
 
-Now place [](/scripts/age.py) and [](/scripts/yearprogress.py) in your home directory
+[firstwidget.webm](https://github.com/realKarthikNair/replicating-my-linux-desktop-setup/assets/78267371/42c4086b-e838-4cb0-a208-9e07cde6c593)
+
+Now place the scripts i wrote: [age.py](/scripts/age.py) and [yearprogress.py](/scripts/yearprogress.py) in your home directory
 Make sure to change the DOB in age.py to your own (line 17)
 
 4. For weather widget create a Custom Widget and follow these
 
-![](/res/weather.mp4)
+[weather.webm](https://github.com/realKarthikNair/replicating-my-linux-desktop-setup/assets/78267371/0b44e349-649a-4c09-ab46-36b14ccbc98d)
 
-Now place [](/scripts/weather.py) in your home directory. 
+
+Now place [weather.py](/scripts/weather.py) in your home directory. (writing this script was fun)
 Make sure to get API keys from openweathermap and apiip.net and put them in line 104 and 108 of weather.py.
 
 ### Extensions
@@ -77,7 +80,8 @@ https://extensions.gnome.org/extension/1460/vitals/
 
 You can customize the appearance of the system monitor by clicking on the settings icon within the extension.
 
-![](/res/Screencast%20from%202024-02-11%2023-52-45.mp4)
+[Screencast from 2024-02-11 23-52-45.webm](https://github.com/realKarthikNair/replicating-my-linux-desktop-setup/assets/78267371/46915d6c-88aa-4bca-adfc-9ce6f217c6fe)
+
 
 2. Net Speed Simplified : gives you a network speed monitor in the top bar.
 
@@ -87,7 +91,8 @@ https://extensions.gnome.org/extension/3724/net-speed-simplified/
 
 You can customize it too. 
 
-![](/res/netspeedconfig.mp4)
+[netspeedconfig.webm](https://github.com/realKarthikNair/replicating-my-linux-desktop-setup/assets/78267371/f2f6e33c-b9b5-4bcc-b7b2-61befbfd6e69)
+
 
 3. Clipboard History : gives you a clipboard history manager.
 
@@ -118,11 +123,13 @@ https://extensions.gnome.org/extension/307/dash-to-dock/
 
 You can configure it as much as you want. Here is my configuration.
 
-![](/res/dock.mp4)
+[dock.webm](https://github.com/realKarthikNair/replicating-my-linux-desktop-setup/assets/78267371/e3636738-4157-4803-99ed-5881d7565ec9)
+
 
 7. There are more I use but the above are the most important ones. Here is the whole list 
 
-![](/res/extensions.mp4)
+
+[extensions.webm](https://github.com/realKarthikNair/replicating-my-linux-desktop-setup/assets/78267371/63ea547a-95e4-48f1-818a-1477d34e7b8c)
 
 
 
