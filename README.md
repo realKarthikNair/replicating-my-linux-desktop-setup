@@ -48,7 +48,7 @@ https://extensions.gnome.org/extension/5156/desktop-clock/
 
 2. Open the extension settings and click on 'Add Widget'.
 
-![](/res/addwidget.webm)
+![](/res/addwidget.mp4)
 
 
 3. Add a Digital Clock widget and follow these
@@ -57,14 +57,14 @@ https://extensions.gnome.org/extension/5156/desktop-clock/
 
 Create elements as shown 
 
-![](/res/firstwidget.webm)
+![](/res/firstwidget.mp4)
 
 Now place [](/scripts/age.py) and [](/scripts/yearprogress.py) in your home directory
 Make sure to change the DOB in age.py to your own (line 17)
 
 4. For weather widget create a Custom Widget and follow these
 
-![](/res/weather.webm)
+![](/res/weather.mp4)
 
 Now place [](/scripts/weather.py) in your home directory. 
 Make sure to get API keys from openweathermap and apiip.net and put them in line 104 and 108 of weather.py.
@@ -77,7 +77,7 @@ https://extensions.gnome.org/extension/1460/vitals/
 
 You can customize the appearance of the system monitor by clicking on the settings icon within the extension.
 
-![](/res/Screencast%20from%202024-02-11%2023-52-45.webm)
+![](/res/Screencast%20from%202024-02-11%2023-52-45.mp4)
 
 2. Net Speed Simplified : gives you a network speed monitor in the top bar.
 
@@ -87,7 +87,7 @@ https://extensions.gnome.org/extension/3724/net-speed-simplified/
 
 You can customize it too. 
 
-![](/res/netspeedconfig.webm)
+![](/res/netspeedconfig.mp4)
 
 3. Clipboard History : gives you a clipboard history manager.
 
@@ -118,11 +118,11 @@ https://extensions.gnome.org/extension/307/dash-to-dock/
 
 You can configure it as much as you want. Here is my configuration.
 
-![](/res/dock.webm)
+![](/res/dock.mp4)
 
 7. There are more I use but the above are the most important ones. Here is the whole list 
 
-![](/res/extensions.webm)
+![](/res/extensions.mp4)
 
 
 
