@@ -96,7 +96,7 @@ You can customize it too.
 
 3. Clipboard History : gives you a clipboard history manager.
 
-![](/res/netspeed.png) 
+![](/res/clipboard_history.png)
 
 https://extensions.gnome.org/extension/4839/clipboard-history/
 
