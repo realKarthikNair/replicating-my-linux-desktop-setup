@@ -2,6 +2,7 @@ import os
 import requests
 import json
 import time
+import sys, argparse
 
 
 def get_ip_address():
@@ -17,7 +18,7 @@ def get_cached_ip():
             last_updated = data.get("last_updated")
             # print(last_updated)
             # exit()
-            if last_updated and time.time() - last_updated < 3600:
+            if last_updated and ((time.time() - last_updated) < 3600):
                 return data.get("city")
     except FileNotFoundError:
         pass
@@ -33,6 +34,7 @@ def update_ip_cache(city):
 def get_city_name(ip, access_key):
     cached_ip = get_cached_ip()
     if cached_ip:
+        # print(cached_ip)
         return cached_ip.replace(" ", "%20")
 
     url = f"https://apiip.net/api/check?ip={ip}&accessKey={access_key}"
@@ -92,6 +94,15 @@ def get_weather(city_name, api_key):
             print("Failed to retrieve weather information.")
     else:
         print("City name not provided.")
+
+
+parser = argparse.ArgumentParser(description="Get weather information for your city.")
+parser.add_argument("--force", action="store_true", help="Force update weather data.")
+args = parser.parse_args()
+
+if args.force:
+    os.remove("weather_cache.json")
+    os.remove("ip_cache.json")
 
 
 weather_data = None
