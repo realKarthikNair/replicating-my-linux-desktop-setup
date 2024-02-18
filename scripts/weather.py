@@ -17,7 +17,7 @@ def get_cached_ip():
             last_updated = data.get("last_updated")
             # print(last_updated)
             # exit()
-            if last_updated and time.time() - last_updated < 24 * 3600:
+            if last_updated and time.time() - last_updated < 3600:
                 return data.get("city")
     except FileNotFoundError:
         pass
