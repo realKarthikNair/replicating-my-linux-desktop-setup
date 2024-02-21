@@ -70,7 +70,7 @@ Make sure to change the DOB in age.py to your own (line 17)
 
 
 Now place [weather.py](/scripts/weather.py) in your home directory. (writing this script was fun)
-Make sure to get API keys from openweathermap and apiip.net and put them in line 115 and 119 of weather.py.
+Make sure to get API keys from openweathermap and apiip.net and put them in line 104 and 107 of weather.py.
 
 ### Extensions
 
