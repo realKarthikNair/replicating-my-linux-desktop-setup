@@ -49,22 +49,19 @@ def get_cached_weather(city_name):
     try:
         with open("weather_cache.json", "r") as file:
             data = json.load(file)
+
             last_updated = data.get("last_updated")
             if last_updated and time.time() - last_updated < 30 * 60:
-                return data.get(city_name)
+                if data.get("data").get("name"):
+                    return data
     except FileNotFoundError:
         pass
     return None
 
 
 def update_weather_cache(city_name, weather_data):
-    try:
-        with open("weather_cache.json", "r") as file:
-            data = json.load(file)
-    except FileNotFoundError:
-        data = {}
 
-    data[city_name] = {"data": weather_data, "last_updated": time.time()}
+    data = {"data": weather_data, "last_updated": time.time()}
 
     with open("weather_cache.json", "w") as file:
         json.dump(data, file)
